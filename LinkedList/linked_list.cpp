@@ -1,18 +1,30 @@
 #include "linked_list.hpp"
+#include <iostream>
+
+using namespace std;
 
 template <typename T>
 LinkedList<T>::LinkedList()
 {
+    this->head = new ListNode(0);
+    this->length = 1;
 }
 
 template <typename T>
 LinkedList<T>::LinkedList(ListNode<T> &head)
 {
+    this->head = &head;
+    this->length = 1;
 }
 
 template <typename T>
 LinkedList<T>::~LinkedList()
 {
+    ListNode<T> curr = new ListNode(head); // need copy constructor in ListNode
+    ListNode<T> tmp;
+    // while curr
+    // {
+    // }
 }
 
 template <typename T>
