@@ -18,7 +18,8 @@ int main()
     cout << "--------------" << endl;
     cout << "Linked List tests: " << endl;
 
-    LinkedList<int> testlist = LinkedList<int>();
+    LinkedList<int> testlist = LinkedList<int>(test2);
     cout << "head val: " << testlist.head->val << endl;
     cout << "head next: " << testlist.head->next << endl;
+    testlist.print_list();
 }

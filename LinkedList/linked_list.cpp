@@ -20,8 +20,8 @@ LinkedList<T>::LinkedList(ListNode<T> &head)
 template <typename T>
 LinkedList<T>::~LinkedList()
 {
-    ListNode<T> curr = new ListNode(head); // need copy constructor in ListNode
-    ListNode<T> tmp;
+    // ListNode<T> curr = new ListNode(head); // need copy constructor in ListNode
+    // ListNode<T> tmp;
     // while curr
     // {
     // }
@@ -52,4 +52,17 @@ template <typename T>
 ListNode<T> *LinkedList<T>::find_mid()
 {
     return this->head;
+}
+
+template <typename T>
+void LinkedList<T>::print_list()
+{
+    ListNode<T> *curr = new ListNode<T>();
+    curr = head;
+    while (curr)
+    {
+        cout << "[" << curr->val << "]" << " -> ";
+        curr = curr->next;
+    }
+    cout << endl;
 }

@@ -15,4 +15,5 @@ public:
     void reverse();
     bool detect_cycle();
     ListNode<T> *find_mid();
+    void print_list();
 };
